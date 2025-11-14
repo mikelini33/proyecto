@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoMonitor Web – Colegio Comfandi Miraflores</title>
+
+    <link rel="stylesheet" href="tarexddd.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>EcoMonitor – Colegio Comfandi Miraflores</h1>
+
+        <p>Monitoreo de residuos, participación estudiantil y conciencia ambiental</p>
+
+    </header>
+
+    <section class="info">
+
+        <h2>Actores</h2>
+
+        <ul>
+
+            <li><strong>Estudiantes:</strong> quienes generan residuos.</li>
+
+            <li><strong>Personal de limpieza:</strong> encargados de retirar y administrar los residuos.</li>
+
+            <li><strong>Directivos:</strong> quienes toman decisiones para mejorar la gestión.</li>
+
+        </ul>
+
+      <h2>Puntos de interés</h2>
+
+      <ul>
+
+        <li><strong>Papeleras:</strong> diferentes tipos (orgánico, reciclable, no reciclable) ubicadas estratégicamente.</li>
+
+        <li><strong>Pasillos y aulas:</strong> zonas de mayor concentración de residuos.</li>
+
+    </ul>
+
+      <h2>Restricciones</h2>
+
+      <ul>
+
+        <li><strong>Presupuesto limitado:</strong> el sistema debe ser económico y sostenible.</li>
+
+        <li><strong>Uso real:</strong> no todos los estudiantes usarán correctamente las papeleras, debe haber motivación y seguimiento.</li>
+
+    </ul>
+
+      <h2>Metas</h2>
+
+      <ul>
+
+        <li><strong>Reducción de basura:</strong> menor cantidad total de residuos.</li>
+
+        <li><strong>Aumentar la conciencia:</strong> mejor uso de las canecas y actuación responsable.</li>
+
+        <li><strong>Participación estudiantil:</strong> inclusión activa de los estudiantes en el sistema.</li>
+
+    </ul>
+
+</section>
+
+    <div class="container">
+
+        <h2>Registro de Punto de Residuos</h2>
+
+        <label for="nivel">Nivel de la papelera (%):</label>
+
+        <input type="number" id="nivel" min="0" max="100">
+
+        <label for="tipo">Tipo de residuo predominante:</label>
+
+        <input type="text" id="tipo" placeholder="Ej: Plástico, papel, orgánico">
+
+        <label for="ubicacion">Ubicación (pasillo/aula):</label>
+
+        <input type="text" id="ubicacion" placeholder="Ej: Pasillo C, Aula 201">
+
+        <label for="recreo">¿Es horario de recreo?</label>
+
+        <select id="recreo">
+
+            <option value="no">No</option>
+
+            <option value="si">Sí</option>
+
+        </select>
+
+        <label for="qr">¿Hubo reporte por QR?</label>
+
+        <select id="qr">
+
+            <option value="no">No</option>
+
+            <option value="si">Sí</option>
+
+        </select>
+
+        <button onclick="procesar()">Procesar Datos</button>
+
+        <div id="resultado" class="resultado"></div>
+
+    </div>
+
+    <footer>
+
+        <p>Colegio Comfandi Miraflores – Proyecto</p>
+
+    </footer>
+
+    <script src="tareaxddd.js"></script>
+
+</body>
+
+</html>
